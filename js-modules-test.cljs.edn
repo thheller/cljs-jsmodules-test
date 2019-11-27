@@ -1,0 +1,10 @@
+^{:auto-testing true
+  :open-url false
+  :watch-dirs ["src"]}
+{:main         js-modules-test.core
+ :foreign-libs [{:file        "node_modules/js-joda/dist/js-joda.esm.js"
+                 :provides    ["js-joda"]
+                 :global-exports {js-joda JSJoda}
+                 :module-type :es6}]
+ :optimizations :advanced
+ }
