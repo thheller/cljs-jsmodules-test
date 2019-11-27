@@ -3,7 +3,8 @@
   :watch-dirs ["src"]}
 {:main         js-modules-test.core
  :foreign-libs [{:file        "node_modules/js-joda/dist/js-joda.esm.js"
-                 :provides    ["js-joda"]
-                 :global-exports {js-joda JSJoda}
+                 ;https://clojure.atlassian.net/browse/CLJS-2402
+                 :provides    ["js-jodax"]
+                 :global-exports {js-jodax JSJoda}
                  :module-type :es6}]
  :optimizations :advanced}

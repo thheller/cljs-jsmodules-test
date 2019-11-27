@@ -17,7 +17,7 @@ Note: these are ungzipped sizes, resulting from advanced compilation
 
 `clojure -Anot-module -m figwheel.main --build regular-cljsjs-build`
 
-=> 302K
+=> 294K
 
 ### Now using Js-Joda as a Javascript Module 
 
@@ -31,6 +31,11 @@ Getting the library as a module does reduce size a bit, entirely due to advanced
 renaming. 
 
 Still, JS-Joda has been included in it's entirety even though just some of it is used. IOW, Google 
-Closure is not doing dead code elimination here.
+Closure is not doing dead code elimination here. The page on the Clojurescript site mentions dead code
+eliminiation
  
-So... will is dead code elimination in the pipes for this scenario. Which pipes? When? etc
+So... is dead code elimination in the pipes for this scenario. Which pipes? When? etc
+
+Or... is this some problem related to js-joda?
+
+To be continued ...

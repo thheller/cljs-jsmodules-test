@@ -1,4 +1,5 @@
 (ns js-modules-test.core
-  (:require [js-joda]))
+  (:require [js-jodax]))
 
-(println (.now (.-LocalDate js-joda)))
+
+(println (.-subtractFrom (.-TemporalAmount js-jodax)))
