@@ -6,5 +6,4 @@
                  :provides    ["js-joda"]
                  :global-exports {js-joda JSJoda}
                  :module-type :es6}]
- :optimizations :advanced
- }
+ :optimizations :advanced}

@@ -1,0 +1,6 @@
+^{:auto-testing true
+  :open-url false
+  :watch-dirs ["src"]}
+{:main         js-modules-test.no-deps
+ :optimizations :advanced
+ }
