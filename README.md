@@ -33,3 +33,4 @@ renaming.
 Still, JS-Joda has been included in it's entirety even though just some of it is used. IOW, Google 
 Closure is not doing dead code elimination here.
  
+So... will is dead code elimination in the pipes for this scenario. Which pipes? When? etc
