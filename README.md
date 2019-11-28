@@ -1,7 +1,9 @@
 # Does Using Javascript Modules vs normal Foreign Libs change build size much?
 
 Testing Cljs [JavaScript Modules](https://clojurescript.org/guides/javascript-modules) with 
-the [JS-Joda](https://github.com/js-joda/js-joda) library as an example.
+the [JS-Joda](https://github.com/js-joda/js-joda) library as an example. The ideal outcome would
+be to have some cljs code that uses only some of the JSJoda library, and only the used portion
+of it is included in the output build
 
 Note: these are ungzipped sizes, resulting from advanced compilation
 
