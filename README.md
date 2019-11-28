@@ -42,4 +42,9 @@ Or ... is the fact that the cljs code is referring to the entire 'js-joda' lib t
 ie is there some way to do the equivalent of js `import {Bar} from 'Foo''`. Now that Google Closure
 understands these libraries, could the cljs `:import` be used? My experiments say not, but why not?
 
+Pointing the foreign-lib to the "src" directory of js-joda was another idea (it should create
+foreign lib entries for each file), but doing that 
+I get ' This language feature is only supported for ECMASCRIPT6 mode or better' - so newer version 
+of Google Closure? some flag to enable this? transpile the js first?
+
 To be continued ...
