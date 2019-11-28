@@ -38,4 +38,8 @@ So... is dead code elimination in the pipes for this scenario. Which pipes? When
 
 Or... is this some problem related to js-joda?
 
+Or ... is the fact that the cljs code is referring to the entire 'js-joda' lib the problem,
+ie is there some way to do the equivalent of js `import {Bar} from 'Foo''`. Now that Google Closure
+understands these libraries, could the cljs `:import` be used? My experiments say not, but why not?
+
 To be continued ...
