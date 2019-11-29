@@ -1,0 +1,8 @@
+/out
+/node_modules
+/.shadow-cljs
+/.cpcache
+/.idea
+*.iml
+pom.xml
+

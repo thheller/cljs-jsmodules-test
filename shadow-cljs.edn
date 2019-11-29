@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:deps true
+ :builds
+ {:no-deps
+  {:target :browser
+   :output-dir "out/no-deps/js"
+   :modules {:main {:entries [js-modules-test.no-deps]}}}
+  :js-joda
+  {:target :browser
+   :output-dir "out/js-joda/js"
+   :modules {:main {:entries [js-modules-test.core]}}}
+  :js-joda-dce
+  {:target :browser
+   :output-dir "out/js-joda-dce/js"
+   :modules {:main {:entries [js-modules-test.core]}}
+   ;; want to run everything through closure
+   ;; and also prefer ESM "module" code over regular "main" (usually commonjs)
+   :js-options {:js-provider :closure
+                :entry-keys ["module" "main"]}
+   }}}
